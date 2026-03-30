@@ -24,13 +24,14 @@ We provide innovative IT solutions, turning your ideas into powerful digital exp
 
 ---
 
-### � Organization Chart
-Explore our organizational structure and department workflows in our interactive chart:
-[![Organization Chart](https://img.shields.io/badge/View-Org_Chart-7c3aed?style=for-the-badge&logo=diagrams.net)](./onex-orgchart.drawio)
+### 📊 Organization Chart
+Explore our organizational structure and department workflows below:
+
+![One-X Organization Chart](./onex-orgchart.png)
 
 ---
 
-### �🔗 Connect With Us
+### � Connect With Us
 - **Website**: [onex-tech.com](https://onex-tech.com/)
 - **Mission**: Innovative solutions that empower businesses through technology.
 
