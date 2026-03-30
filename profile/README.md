@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="./553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png" alt="ONEX LOGO" width="300"/>
+  <img src="553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png" alt="ONEX LOGO" width="300"/>
 </p>
 
 
-![ONEX Banner](./onex-banner.svg)
+![ONEX Banner](onex-banner.svg)
 
 
 
@@ -33,7 +33,7 @@ We provide innovative IT solutions, turning your ideas into powerful digital exp
 ### 📊 Organization Chart
 Explore our organizational structure and department workflows below:
 
-![One-X Organization Chart](./onex-orgchart.png)
+![One-X Organization Chart](onex-orgchart.png)
 
 ---
 
