@@ -1,6 +1,9 @@
 # .github
 
-# One-X IT (SATU-X)
+![ONEX LOGO](./553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png)
+![ONEX Banner](./onex-banner.svg)
+
+# ONEX
 
 **Building the Future, One Code at a Time.**
 
@@ -31,7 +34,7 @@ Explore our organizational structure and department workflows below:
 
 ---
 
-### � Connect With Us
+### 🔗 Connect With Us
 - **Website**: [onex-tech.com](https://onex-tech.com/)
 - **Mission**: Innovative solutions that empower businesses through technology.
 

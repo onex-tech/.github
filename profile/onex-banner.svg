@@ -1,0 +1,301 @@
+<svg viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg" width="960" height="320">
+  <defs>
+
+    <!-- Brand gradients -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9267e"/>
+      <stop offset="100%" style="stop-color:#5b3db5"/>
+    </linearGradient>
+    <linearGradient id="brandGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9267e"/>
+      <stop offset="100%" style="stop-color:#5b3db5"/>
+    </linearGradient>
+    <linearGradient id="brandGradVRev" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5b3db5"/>
+      <stop offset="100%" style="stop-color:#c9267e"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="50%" style="stop-color:#f0abfc"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="dividerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="30%" style="stop-color:#5b3db5"/>
+      <stop offset="70%" style="stop-color:#c9267e"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="30%" style="stop-color:#c9267e;stop-opacity:0.5"/>
+      <stop offset="70%" style="stop-color:#5b3db5;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <linearGradient id="accentLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="50%" style="stop-color:#c9267e"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <linearGradient id="accentRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="50%" style="stop-color:#5b3db5"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9267e"/>
+      <stop offset="100%" style="stop-color:#5b3db5"/>
+    </linearGradient>
+    <linearGradient id="xGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5b3db5"/>
+      <stop offset="100%" style="stop-color:#c9267e"/>
+    </linearGradient>
+    <linearGradient id="topBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9267e"/>
+      <stop offset="100%" style="stop-color:#5b3db5"/>
+    </linearGradient>
+    <linearGradient id="bottomBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5b3db5"/>
+      <stop offset="100%" style="stop-color:#c9267e"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPurple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowLogo" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowSoft">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+    </filter>
+    <filter id="glowMid">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+    </filter>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#c9267e" stroke-width="0.4" opacity="0.18"/>
+    </pattern>
+
+    <!-- Clip path for banner bounds -->
+    <clipPath id="bannerClip">
+      <rect width="960" height="320" rx="14"/>
+    </clipPath>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+
+      /* ── Scanline ── */
+      .scanline { animation: scan 4s ease-in-out infinite; }
+      @keyframes scan {
+        0%   { transform: translateY(-2px); opacity: 0; }
+        5%   { opacity: 1; }
+        95%  { opacity: 0.8; }
+        100% { transform: translateY(322px); opacity: 0; }
+      }
+
+      /* ── Orb pulses ── */
+      .orb1 { animation: orbPulse1 6s ease-in-out infinite; }
+      .orb2 { animation: orbPulse2 7s ease-in-out infinite 2s; }
+      .orb3 { animation: orbPulse3 5s ease-in-out infinite 4s; }
+      @keyframes orbPulse1 {
+        0%,100% { opacity: 0.22; r: 130; }
+        50%     { opacity: 0.38; r: 150; }
+      }
+      @keyframes orbPulse2 {
+        0%,100% { opacity: 0.18; r: 110; }
+        50%     { opacity: 0.32; r: 130; }
+      }
+      @keyframes orbPulse3 {
+        0%,100% { opacity: 0.12; r: 80; }
+        50%     { opacity: 0.25; r: 100; }
+      }
+
+      /* ── Logo glow pulse ── */
+      .logo-mark { animation: logoPulse 3s ease-in-out infinite; }
+      @keyframes logoPulse {
+        0%,100% { filter: url(#glowLogo); opacity: 1; }
+        50%     { opacity: 0.85; }
+      }
+
+      /* ── Content fade in ── */
+      .fade-left  { animation: fadeL 1s ease forwards; }
+      .fade-right { animation: fadeR 1s ease 0.3s forwards; opacity: 0; }
+      @keyframes fadeL {
+        from { opacity: 0; transform: translateX(-20px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes fadeR {
+        from { opacity: 0; transform: translateX(20px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+
+      /* ── Pill hover blink ── */
+      .dot1 { animation: blink 2s ease-in-out infinite; }
+      .dot2 { animation: blink 2s ease-in-out infinite 0.6s; }
+      .dot3 { animation: blink 2s ease-in-out infinite 1.2s; }
+      @keyframes blink {
+        0%,100% { opacity: 1; }
+        50%     { opacity: 0.2; }
+      }
+
+      /* ── Status online dot ── */
+      .online-dot { animation: blink 1.5s ease-in-out infinite; }
+
+      /* ── Grid drift ── */
+      .grid-layer { animation: gridDrift 20s linear infinite; }
+      @keyframes gridDrift {
+        0%   { transform: translateY(0); }
+        100% { transform: translateY(48px); }
+      }
+
+      /* ── Particle floats ── */
+      .p1  { animation: fp1 5s ease-in-out infinite 0s; }
+      .p2  { animation: fp1 7s ease-in-out infinite 1s; }
+      .p3  { animation: fp1 6s ease-in-out infinite 2s; }
+      .p4  { animation: fp1 8s ease-in-out infinite 0.5s; }
+      .p5  { animation: fp1 5.5s ease-in-out infinite 3s; }
+      .p6  { animation: fp1 9s ease-in-out infinite 1.5s; }
+      .p7  { animation: fp1 6.5s ease-in-out infinite 2.5s; }
+      .p8  { animation: fp1 7.5s ease-in-out infinite 0.8s; }
+      @keyframes fp1 {
+        0%   { opacity: 0; transform: translateY(0) scale(0.5); }
+        15%  { opacity: 0.9; transform: translateY(-10px) scale(1); }
+        85%  { opacity: 0.4; }
+        100% { opacity: 0; transform: translateY(-90px) scale(0.3); }
+      }
+
+      /* ── Corner pulse ── */
+      .corner { animation: cornerPulse 4s ease-in-out infinite; }
+      @keyframes cornerPulse {
+        0%,100% { opacity: 0.6; }
+        50%     { opacity: 1; }
+      }
+
+      /* fonts fallback */
+      .brand    { font-family: 'Syne', 'Arial Black', sans-serif; font-weight: 800; }
+      .mono     { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+    </style>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  ROOT CLIP                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g clip-path="url(#bannerClip)">
+
+    <!-- Background -->
+    <rect width="960" height="320" fill="#07050f"/>
+
+    <!-- Animated grid -->
+    <g class="grid-layer">
+      <rect width="960" height="368" y="-48" fill="url(#grid)"/>
+    </g>
+
+    <!-- Glow orbs -->
+    <circle class="orb1" cx="-20" cy="60" r="130" fill="#c9267e" filter="url(#glowSoft)" opacity="0.22"/>
+    <circle class="orb2" cx="980" cy="260" r="110" fill="#5b3db5" filter="url(#glowSoft)" opacity="0.18"/>
+    <circle class="orb3" cx="480" cy="160" r="80"  fill="#9333ea" filter="url(#glowMid)"  opacity="0.12"/>
+
+    <!-- Scanline sweep -->
+    <rect class="scanline" x="0" y="0" width="960" height="2" fill="url(#scanGrad)"/>
+
+    <!-- Side accent lines -->
+    <rect x="0"   y="0" width="3" height="320" fill="url(#accentLeft)"/>
+    <rect x="957" y="0" width="3" height="320" fill="url(#accentRight)"/>
+
+    <!-- Top / bottom bars -->
+    <rect x="0" y="0"   width="960" height="4" fill="url(#topBarGrad)"/>
+    <rect x="0" y="316" width="960" height="4" fill="url(#bottomBarGrad)"/>
+
+    <!-- Corner brackets -->
+    <g class="corner" stroke="#c9267e" stroke-width="2" fill="none">
+      <path d="M18,36 L18,18 L36,18"/>
+      <path d="M924,18 L942,18 L942,36" stroke="#5b3db5"/>
+      <path d="M18,284 L18,302 L36,302" stroke="#5b3db5"/>
+      <path d="M942,284 L942,302 L924,302"/>
+    </g>
+
+    <!-- Floating particles -->
+    <circle class="p1" cx="120" cy="240" r="2" fill="#c9267e"/>
+    <circle class="p2" cx="340" cy="260" r="1.5" fill="#5b3db5"/>
+    <circle class="p3" cx="200" cy="200" r="2" fill="#e879f9"/>
+    <circle class="p4" cx="80"  cy="180" r="1.5" fill="#c9267e"/>
+    <circle class="p5" cx="560" cy="270" r="2" fill="#5b3db5"/>
+    <circle class="p6" cx="780" cy="250" r="1.5" fill="#c9267e"/>
+    <circle class="p7" cx="860" cy="200" r="2" fill="#e879f9"/>
+    <circle class="p8" cx="440" cy="220" r="1.5" fill="#9333ea"/>
+
+    <!-- ─────────────────────────────── -->
+    <!--  LEFT CONTENT                   -->
+    <!-- ─────────────────────────────── -->
+    <g class="fade-left">
+
+      <!-- Logo mark (using uploaded image) -->
+      <image href="553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png" x="52" y="78" width="120" height="120" class="logo-mark" />
+
+      <!-- Brand name -->
+      <text x="200" y="160" class="brand" font-size="62" fill="url(#textGrad)" letter-spacing="-1">ONEX</text>
+
+      <!-- Tagline -->
+      <text x="200" y="195" class="mono" font-size="11" fill="#6b5a8a" letter-spacing="0.5">
+        <tspan fill="#c9267e">&gt; </tspan>Building the Future, One Code at a Time.
+      </text>
+
+      <!-- Website link -->
+      <text x="200" y="215" class="mono" font-size="10" fill="#4a3a6a" letter-spacing="1">onex-tech.com</text>
+
+    </g>
+
+    <!-- Vertical divider -->
+    <rect x="580" y="60" width="1" height="200" fill="url(#dividerGrad)" opacity="0.6"/>
+
+    <!-- ─────────────────────────────── -->
+    <!--  RIGHT CONTENT — Service Pills  -->
+    <!-- ─────────────────────────────── -->
+    <g class="fade-right">
+
+      <!-- Pill 1: Web App Dev -->
+      <rect x="608" y="95" width="308" height="38" rx="19" fill="#1e0535" stroke="#c9267e" stroke-width="1.5" opacity="0.85"/>
+      <circle class="dot1" cx="632" cy="114" r="5" fill="#c9267e"/>
+      <circle cx="632" cy="114" r="5" fill="#c9267e" filter="url(#glowPink)" opacity="0.4"/>
+      <text x="648" y="119" class="mono" font-size="11" fill="#f0abfc" letter-spacing="1.5">WEB APP DEVELOPMENT</text>
+
+      <!-- Pill 2: DevOps -->
+      <rect x="608" y="145" width="308" height="38" rx="19" fill="#1e0535" stroke="#9333ea" stroke-width="1.5" opacity="0.85"/>
+      <circle class="dot2" cx="632" cy="164" r="5" fill="#9333ea"/>
+      <circle cx="632" cy="164" r="5" fill="#9333ea" filter="url(#glowPurple)" opacity="0.4"/>
+      <text x="648" y="169" class="mono" font-size="11" fill="#d8b4fe" letter-spacing="1.5">DEVOPS &amp; SECURITY</text>
+
+      <!-- Pill 3: UI/UX -->
+      <rect x="608" y="195" width="308" height="38" rx="19" fill="#1e0535" stroke="#5b3db5" stroke-width="1.5" opacity="0.85"/>
+      <circle class="dot3" cx="632" cy="214" r="5" fill="#5b3db5"/>
+      <circle cx="632" cy="214" r="5" fill="#5b3db5" filter="url(#glowPurple)" opacity="0.4"/>
+      <text x="648" y="219" class="mono" font-size="11" fill="#c4b5fd" letter-spacing="1.5">UI/UX &amp; CMS SOLUTIONS</text>
+
+    </g>
+
+    <!-- ─────────────────────────────── -->
+    <!--  BOTTOM STATUS BAR              -->
+    <!-- ─────────────────────────────── -->
+    <rect x="0" y="288" width="960" height="28" fill="#000000" opacity="0.55"/>
+    <line x1="0" y1="288" x2="960" y2="288" stroke="#c9267e" stroke-width="0.8" opacity="0.2"/>
+
+    <!-- Status items -->
+    <circle class="online-dot" cx="24" cy="302" r="4" fill="#22c55e"/>
+    <circle cx="24" cy="302" r="4" fill="#22c55e" filter="url(#glowPink)" opacity="0.5"/>
+    <text x="34" y="306" class="mono" font-size="8.5" fill="#c9267e" letter-spacing="2">ONLINE</text>
+
+    <text x="110" y="306" class="mono" font-size="8.5" fill="#3d2a5e" letter-spacing="2">v2025.1.0</text>
+    <text x="210" y="306" class="mono" font-size="8.5" fill="#3d2a5e" letter-spacing="2">3 ENGINEERS</text>
+    <text x="320" y="306" class="mono" font-size="8.5" fill="#3d2a5e" letter-spacing="2">MALAYSIA</text>
+
+    <text x="820" y="306" class="mono" font-size="8.5" fill="#5b3db5" letter-spacing="1.5">onex-tech.com</text>
+
+  </g>
+</svg>
