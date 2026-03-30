@@ -1,4 +1,10 @@
-<img src="./553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png" alt="ONEX LOGO" width="300"/>
+<p align="center">
+  <img src="./553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png" alt="ONEX LOGO" width="300"/>
+</p>
+<p align="center">
+  <b>ONEX-TECHNOLOGIES SDN BHD</b>
+</p>
+
 
 ![ONEX Banner](./onex-banner.svg)
 
