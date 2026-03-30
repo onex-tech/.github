@@ -1,15 +1,13 @@
 <p align="center">
   <img src="./553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png" alt="ONEX LOGO" width="300"/>
 </p>
-<p align="center">
-  <b>ONEX-TECHNOLOGIES SDN BHD</b>
-</p>
 
 
 ![ONEX Banner](./onex-banner.svg)
 
-# ONEX
 
+
+# ONEX-TECHNOLOGIES SDN BHD
 **Building the Future, One Code at a Time.**
 
 We provide innovative IT solutions, turning your ideas into powerful digital experiences that drive growth, efficiency, and success. Driven by innovation, we craft scalable and powerful web solutions tailored to empower businesses.
