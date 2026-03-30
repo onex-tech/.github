@@ -1,6 +1,4 @@
-# .github
-
-![ONEX LOGO](./553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png)
+<img src="./553308732-b533fa2d-552b-410f-b504-263c5c79fbd6.png" alt="ONEX LOGO" width="300"/>
 ![ONEX Banner](./onex-banner.svg)
 
 # ONEX
